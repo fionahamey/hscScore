@@ -425,12 +425,12 @@ for i in range(10):
 
 # To test the trained models on a different dataset we consider the Smart-seq2 scRNA-seq data from Nestorowa et al. (2016) profiling ~1,600 blood stem and progenitor cells from mouse bone marrow. The data were downloaded from the following locations:
 #
-# - htseq_counts_all_cells_gene_names_renamed.txt - Count data for Nestorowa et al. (2016)
+# - nestorowa_htseq_counts_all_cells_gene_names_renamed.txt - Count data for Nestorowa et al. (2016)
 # - coordinates_gene_counts_flow_cytometry.txt - This file contains the diffusion map co-ordinates which we use for plotting and can be downloaded from http://blood.stemcells.cam.ac.uk/single_cell_atlas.html 
 
 # +
 # Load HT-seq counts
-nestorowa_adata = sc.read(data_dir + 'htseq_counts_all_cells_gene_names_renamed.txt', cache=True).T
+nestorowa_adata = sc.read(data_dir + 'nestorowa_htseq_counts_all_cells_gene_names_renamed.txt', cache=True).T
 
 # Change cell names to make compatible with downloaded co-ordinages
 nestorowa_adata.obs_names = [cell_name.replace('-', '.') for cell_name in nestorowa_adata.obs_names]
