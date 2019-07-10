@@ -1,0 +1,13 @@
+# scanpy files 
+cache/
+write/
+
+# ipynb files
+.ipynb_checkpoints/
+
+# Downloaded data
+Downloaded_data/
+
+# Large data files
+Data/*.txt
+Data/*.csv
