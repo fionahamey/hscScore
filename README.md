@@ -1,7 +1,7 @@
 # hscScore
 
 ## Author: Fiona Hamey
-## Summary: GitHub repository for Hamey & G\"{o}ttgens, in preparation
+## Summary: GitHub repository for Hamey & Gottgens, in preparation
 
 ## Introduction
 Haematopoietic stem cells (HSCs) represent a rare cell type in mouse bone marrow, but these cells play an important role in maintaining the blood system. As identifying this population in single-cell gene expression profiling experiments remains a challenge, we developed the method hscScore score for location HSCs in single-cell RNA-sequencing (scRNA-seq) data. This repository contains the code using for training the hscScore model and reproducing the analysis described in the paper. We also provide an example of how to apply the model to your own data.
